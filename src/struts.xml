@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"  
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	
+	
+	<constant name="struts.action.extension" value="html,action,do,"/>
+	<package name="crud" extends="struts-default">
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+		
+		<action name="list" class="top.sonack.crud.action.BookAction" method="list">
+			<result name="success">/list.jsp</result>
+			<result name="confirmAuthorSuccess" type="redirect">/confirmAuthor.action</result>
+		</action>
+		
+		<action name="listAuthors" class="top.sonack.crud.action.BookAction" method="listAuthors">
+			<result name="success">/listAuthors.jsp</result>
+		</action>
+		
+		<action name="deleteSingleBook" class="top.sonack.crud.action.BookAction" method="deleteBook">
+			<result name="success" type="redirect">/list.action</result>
+		</action>
+		
+		<action name="deleteSelectedBook" class="top.sonack.crud.action.BookAction" method="deleteBooks">
+			<result name="success" type="redirect">/list.action</result>
+		</action>
+		
+		<action name="searchInput">
+			<result>/search.jsp</result>
+		</action>
+		
+		<action name="searchBooks" class="top.sonack.crud.action.BookAction" method="searchBooks">
+			<result name="success">/list.jsp</result>
+			<result name="noBook">/noBook.jsp</result>
+			<result name="morethan1">/morethan1authors.jsp</result>
+		</action>
+		
+		<action name="addBookForm">
+			<result name="success">/addBookForm.jsp</result>
+		</action>
+		
+		<action name="confirmAuthor" class="top.sonack.crud.action.BookAction" method="confirmAuthor">
+			<result name="success">/list.jsp</result>
+			<result name="noBook">/noBook.jsp</result>
+		</action>
+		
+		<action name="bookAdded" class="top.sonack.crud.action.BookAction" method="addBook">
+			<result name="success">/addBookSuccess.jsp</result>
+			<result name="input">/${lastInputPage}.jsp</result>
+			<result name="noAuthor">/addAuthorForm.jsp</result>
+		</action>
+		
+		
+		<action name="updateBook" class="top.sonack.crud.action.BookAction" method="updateBook">
+			<result name="success">/updateBook.jsp</result>
+		</action>
+		
+		
+		<action name="commitUpdatedBook" class="top.sonack.crud.action.BookAction" method="commitUpdatedBook">
+			<result name="success">/updateSuccess.jsp</result>
+			<result name="input">/updateBook.jsp</result>
+		</action>
+		
+		<action name="updateAuthor" class="top.sonack.crud.action.BookAction" method="updateAuthor">
+			<result name="success">/updateAuthor.jsp</result>
+		</action>
+		
+		<action name="commitUpdatedAuthor" class="top.sonack.crud.action.BookAction" method="commitUpdatedAuthor">
+			<result name="success">/updateSuccess.jsp</result>
+			<result name="input">/updateAuthor.jsp</result>
+		</action>
+		
+		<action name="showBook" class="top.sonack.crud.action.BookAction" method="updateBook">
+			<result>/showBook.jsp</result>
+		</action>
+		
+		<action name="showAuthor" class="top.sonack.crud.action.BookAction" method="updateAuthor">
+			<result>/showAuthor.jsp</result>
+		</action>
+		
+	</package>
+</struts>

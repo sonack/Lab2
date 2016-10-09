@@ -1,0 +1,310 @@
+a {
+	text-decoration: none;
+	color: #06c;
+}
+
+li {
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+	padding: 0;
+	margin: 0;
+}
+
+.red, .danger {
+	color: red;
+}
+
+#headline {
+	margin-top: 20px;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+table tr:nth-child(odd) {
+	background-color: #F4F4F4;
+}
+
+table tr:nth-child(even) {
+	background-color: #FFFFFF;
+}
+
+table thead tr th {
+	border: 1px solid #ccc;
+	color: white;
+	background-color: #69f;
+}
+
+table tbody tr td {
+	border: 1px solid #ccc;
+}
+
+table td.cz a {
+	border: 1px solid #ccc;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+body {
+	background: url("bg.jpg") top left no-repeat;
+	background-size: 300px 200px;
+}
+
+#main {
+	margin: 20px auto;
+	width: 853px;
+	height: 561px;
+	border: 1px solid #ccc;
+	box-shadow: 8px 8px 6px #ccc;
+	background-color: white;
+}
+
+#header {
+	width: auto;
+	height: 42px;
+	background-color: #69f;
+}
+
+#header ul {
+	background-color: #69f;
+}
+
+#header li {
+	float: left;
+	width: 212px;
+	border-left: 1px solid #ccc;
+}
+
+#header li:hover {
+	background-color: #47a;
+}
+
+#header a {
+	color: white;
+	display: block;
+	padding: 10px 55px;
+	font-weight: bolder;
+}
+
+#content {
+	height: 479px;
+}
+
+.scrollable {
+	height: 414px;
+	overflow-y: auto;
+}
+
+#ctrl {
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	background-color: #09c;
+}
+
+#footer {
+	width: auto;
+	height: 40px;
+	background-color: #69f;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+.xz {
+	width: 35px;
+}
+
+.isbn {
+	width: 110px;
+}
+
+.sm {
+	width: 180px;
+}
+
+.zzbh {
+	width: 70px;
+}
+
+.cbs {
+	width: 150px;
+}
+
+.cbrq {
+	width: 100px;
+}
+
+.jg {
+	width: 60px;
+}
+
+#all {
+	margin-left: 20px;
+}
+
+.right {
+	float: right;
+	margin-right: 20px;
+}
+
+#removeAll {
+	width: 100px;
+	height: 28px;
+	margin-top: 6px;
+}
+
+#search-head {
+	line-height: 40px;
+	text-align: center;
+	padding-top: 80px;
+	margin-bottom: 40px;
+	color: #69f;
+}
+
+#searchLbl {
+	font-weight: bolder;
+	margin-left: 30%;
+}
+
+#searchBooks_searchAuthorName {
+	width: 170px;
+	height: 25px;
+	color: #666;
+}
+
+#searchBooks_searchAuthorName:focus {
+	color: black;
+}
+
+#searchBooks_0 {
+	height: 30px;
+	width: 70px;
+	margin-left: 45%;
+	margin-top: 10px;
+}
+
+#morethan1-head {
+	padding-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #69f;
+}
+
+#morethan1-table {
+	width: 80%;
+}
+
+#morethan1-table th {
+	background-color: #369;
+}
+
+#content.author, #Authortbl {
+	overflow-y: auto;
+}
+
+#add-book-head {
+	line-height: 30px;
+	text-align: center;
+	padding-top: 20px;
+	color: #69f;
+}
+
+#inputForm {
+	margin: 20px auto;
+	width: 55%;
+	padding: 30px 0px 30px 85px;
+	border-top: 1px double #ccc;
+	border-bottom: 1px double #ccc;
+}
+
+#bookAdded input[type="text"] {
+	height: 23px;
+	width: 200px;
+}
+
+#bookAdded input[type="text"].date {
+	width: 45px;
+}
+
+.addBookLbl {
+	text-align: right;
+	display: inline-block;
+	width: 80px;
+}
+
+#add_submit {
+	margin-left: 140px;
+	width: 90px;
+	height: 35px;
+}
+
+ul.errorMessage, ul.errorMessage li {
+	display: inline;
+	color: red;
+	font-weight: bolder;
+}
+
+#authorAdded input[type="text"] {
+	height: 23px;
+	width: 200px;
+}
+
+#moreAboutAuthor {
+	margin-left: 40px;
+	margin-right: 70px;
+}
+
+#back {
+	margin-left: 50px;
+}
+
+#back2 {
+	margin-left: 250px;
+}
+
+th.operation {
+	width: 120px;
+}
+
+#modify_submit {
+	margin-left: 100px;
+	width: 90px;
+	height: 35px;
+}
+
+a#returnNow {
+	text-decoration: underline;
+}
+
+h2#shit {
+	line-height: 30px;
+}
+
+a#back_author {
+	margin-left: 40px;
+}
+
+#authorModify_submit {
+	margin-left: 70px;
+	width: 90px;
+	height: 35px;
+}
+
+input[type="text"]
+{
+	background-color: #eee;
+}
+
+td.sm a,td.zzm a
+{
+	font-weight: bolder;
+	color: #369;
+}
