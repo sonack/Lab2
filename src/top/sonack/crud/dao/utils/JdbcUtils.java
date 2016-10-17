@@ -33,7 +33,7 @@ public class JdbcUtils
 //	    String url = "jdbc:mysql://localhost:3306/BookDB";   
 	    
 //	    腾讯云服务器
-	    String url = "jdbc:mysql://123.206.84.93:3306/bookdb";
+	    String url = "jdbc:mysql://localhost:3306/bookdb";
 	    try
 	    {
 		connection = DriverManager.getConnection(url,USERNAME,PASSWORD);
