@@ -325,7 +325,7 @@ public class BookAction extends ActionSupport
 
 		String dateStr = getYear() + "-" + getMonth() + "-" + getDay();
 
-		if (!isValidDate(dateStr))
+		if (!isValidDate(dateStr) || getYear() > 9999 )
 		{
 		    addFieldError("day", "日期不合法！");
 		}

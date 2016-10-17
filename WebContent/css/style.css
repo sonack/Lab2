@@ -29,12 +29,17 @@ table {
 }
 
 table tr:nth-child(odd) {
-	background-color: #F4F4F4;
+	background-color: #E2E2FF;
 }
 
 table tr:nth-child(even) {
 	background-color: #FFFFFF;
 }
+
+table tr:hover{
+	background-color: #C1C1E3;
+}
+
 
 table thead tr th {
 	border: 1px solid #ccc;

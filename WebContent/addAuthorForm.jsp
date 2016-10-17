@@ -62,7 +62,7 @@
 					<br />
 					<br />
 
-					<s:submit value="修改" id="add_submit" />
+					<s:submit value="添加" id="add_submit" />
 
 				</s:form>
 
